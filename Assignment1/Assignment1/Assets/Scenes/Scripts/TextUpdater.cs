@@ -6,13 +6,8 @@ using UnityEngine.UI;
 
 public class TextUpdater : MonoBehaviour
 {
-    public GameObject ScanningToggle;
-    public GameObject Toggle;
-    public GameObject Scans;
-    public GameObject Score;
-    public GameObject Extractions;
-    public GameObject Tips;
-    public GameObject gameOverPanel;
+
+    private GameObject gameOverPanel;
 
     private Toggle toggleBox;
     private Text toggleText;
@@ -23,24 +18,17 @@ public class TextUpdater : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ScanningToggle = GameObject.Find("ScanningToggle");
-        toggleBox = ScanningToggle.GetComponent<Toggle>();
+        toggleBox = GameObject.Find("ScanningToggle").GetComponent<Toggle>();
 
-        Toggle = GameObject.Find("Label");
-        toggleText = Toggle.GetComponent<Text>();
+        toggleText = GameObject.Find("Label").GetComponent<Text>();
 
-        Scans = GameObject.Find("ScansText");
-        scansText = Scans.GetComponent<Text>();
+        scansText = GameObject.Find("ScansText").GetComponent<Text>();
 
-        Score = GameObject.Find("ScoreText");
-        scoreText = Score.GetComponent<Text>();
+        scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
 
-        Extractions = GameObject.Find("ExtractionText");
-        extractionsText = Extractions.GetComponent<Text>();
+        extractionsText = GameObject.Find("ExtractionText").GetComponent<Text>();
 
-        Tips = GameObject.Find("TipsText");
-        tipsText = Tips.GetComponent<Text>();
-
+        tipsText = GameObject.Find("TipsText").GetComponent<Text>();
        
     }
 
@@ -59,9 +47,9 @@ public class TextUpdater : MonoBehaviour
             GameInfo.TipIndex = 4;
             tipsText.text = GameInfo.Tip;
 
-            GameObject root = GameObject.Find("Canvas");
+            GameObject Canvas = GameObject.Find("Canvas");
 
-            gameOverPanel = root.transform.Find("GameOverPanel").gameObject;
+            gameOverPanel = Canvas.transform.Find("GameOverPanel").gameObject;
             gameOverPanel.SetActive(true);
             Destroy(this);
         }
