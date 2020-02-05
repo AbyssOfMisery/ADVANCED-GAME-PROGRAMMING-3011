@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 167995fc46ec41a4980dccb4455a0004, type: 2}
+  - {fileID: 2100000, guid: 6ab145d3c4567994b8cdd5490fcde60f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -171,7 +171,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9699e704737f57a458e9f39d55dcb972, type: 2}
+  - {fileID: 2100000, guid: e76f1283a8ce93a4b9b357c1ac7546bb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -305,7 +305,6 @@ MonoBehaviour:
     width: 100
     height: 50
   timeText: 'Time Left: '
-  door: {fileID: 100010, guid: cc34f0211303cb74c85f5b5791e63b79, type: 3}
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 0
@@ -539,7 +538,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9699e704737f57a458e9f39d55dcb972, type: 2}
+  - {fileID: 2100000, guid: f5edd92e1ed8c6f4fa86d2384817b86f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

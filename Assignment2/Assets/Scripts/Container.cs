@@ -78,6 +78,7 @@ namespace Assignment2
                     // If we press the activate button, Activate!
                     if (Input.GetButtonDown(activateButton))
                     {
+
                         Activate();
                     }
                 }
@@ -87,7 +88,7 @@ namespace Assignment2
                     Activate();
                 }
             }
-            timeLeft -= Time.deltaTime * 0.4f;
+
         }
 
         public void OnTriggerEnter(Collider other)
@@ -190,6 +191,7 @@ namespace Assignment2
                     // If the lockstitch is currently active...
                     if (lockstitch.activeSelf)
                     {
+                        timeLeft -= Time.deltaTime * 0.4f;
                         // Find the lockstitch component and check if he has any picks left. check how many times left
                         if (CheckRequiredTool() )
                         {
